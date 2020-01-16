@@ -3,6 +3,8 @@
 Restrict JS useful when you want to prevent or allow certain character for the input fields. For example the phone number field you maybe
 want to allow people to insert numeric only or numeric with plus.
 
+When you use Restrict JS, when you copy and paste something into the input text, it will not allowed.
+
 By default, all the keyboard buttons are allow
 
 ```markdown

@@ -2,6 +2,19 @@
   "name": "restrict-js",
   "version": "1.0.0",
   "description": "Only allow certain character can be type in input text.",
+  "keywords": [
+    "input rules",
+    "prevent typing",
+    "page loading overlay",
+    "allow only numbers",
+    "allow only numeric",
+    "accept numbers",
+    "allow only alphabets",
+    "input validation",
+    "onkeypress",
+    "onkeydown",
+    "onkeyup"
+  ],
   "main": "dist/restrict.js",
   "scripts": {
     "test": "jest",
