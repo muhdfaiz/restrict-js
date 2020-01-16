@@ -1,6 +1,6 @@
 {
   "name": "restrict-js",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Only allow certain character can be type in input text.",
   "keywords": [
     "input rules",
