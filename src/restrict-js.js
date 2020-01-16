@@ -134,6 +134,10 @@ class RestrictJS {
 
                     this.allowNumericDashOnly(rule, keyCode, usingShift) ? characterAllow = true : '';
 
+                    this.allowURLOnly(rule, keyCode, usingShift) ? characterAllow = true : '';
+
+                    this.allowEmailOnly(rule, keyCode, usingShift) ? characterAllow = true : '';
+
                     if (!event.shiftKey && this.keyCodes[rule] !== undefined) {
                         if (Array.isArray(this.keyCodes[rule]) && this.keyCodes[rule].indexOf(keyCode) >= 0) {
                             characterAllow = true;
@@ -257,6 +261,38 @@ class RestrictJS {
         }
 
         return rule == 'numericdash' && ((keyCode >= 48 && keyCode <= 57) || keyCode == 189);
+    }
+
+    /**
+     * Rule to allow email.
+     *
+     * @param rule
+     * @param keyCode
+     * @param usingShift
+     * @returns {boolean}
+     */
+    allowEmailOnly(rule, keyCode, usingShift) {
+        if (!usingShift) {
+            return rule == 'email' && ((keyCode >= 48 && keyCode <= 90) || (keyCode >= 96 && keyCode <= 105) || keyCode == 190 || keyCode == 110 || keyCode == 109 || keyCode == 173 || keyCode == 189);
+        }
+
+        return rule == 'email' && (keyCode == 50 || keyCode == 189 || keyCode == 173);
+    }
+
+    /**
+     * Rule to allow url.
+     *
+     * @param rule
+     * @param keyCode
+     * @param usingShift
+     * @returns {boolean}
+     */
+    allowURLOnly(rule, keyCode, usingShift) {
+        if (!usingShift) {
+            return rule == 'url' && ((keyCode >= 48 && keyCode <= 90) || (keyCode >= 96 && keyCode <= 105) || keyCode == 191 || keyCode == 111 || keyCode == 190 || keyCode == 110);
+        }
+
+        return rule == 'url' && (keyCode == 186 || keyCode == 59);
     }
 
     /**
