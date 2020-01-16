@@ -1,4 +1,4 @@
-## JS Loading Overlay
+## Restrict JS
 
 Restrict JS useful when you want to prevent or allow certain character for the input fields. For example the phone number field you maybe
 want to allow people to insert numeric only or numeric with plus.
