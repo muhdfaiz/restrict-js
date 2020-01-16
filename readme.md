@@ -31,7 +31,7 @@ yarn add restrict-js
 ```
 
 ### Demo
-- [https://muhdfaiz.github.io/restrict-js//](https://muhdfaiz.github.io/restrict-js//)
+- [https://muhdfaiz.github.io/restrict-js/](https://muhdfaiz.github.io/restrict-js/)
 
 ### How To Use
 
