@@ -64,4 +64,6 @@ numeric - Only allow numeric. 0-9
 alphanumeric - Only allow alphabet numeric. A-Z,0-9
 alphaspace - Only allow alphabet and space.
 alphadash - Only allow alphabet and dash (-)
+email - Only allow alphabet, numeric, @ (alias), . (dot), - (hypen), _ (underscore)
+url - Only allow alphabet, numeric, : (colon), . (dot), / (forward slash)
 ```
