@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Restrict JS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3>Restrict JS</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-8 offset-md-2">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Allow Letter Only</label>
+                        <input id="name" name="name" type="text" class="form-control" data-restrict-js="alpha">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone_number">Allow Number Only</label>
+                        <input id="phone_number" name="phone_number" type="text" class="form-control" data-restrict-js="numeric">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="alphanumeric">Allow Alpha Numeric Only</label>
+                        <input id="alphanumeric" name="alphanumeric" type="text" class="form-control" data-restrict-js="alphanumeric">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="alphaspace">Allow Alpha Space Only</label>
+                        <input id="alphaspace" name="alphaspace" type="text" class="form-control" data-restrict-js="alphaspace">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="alphadash">Allow Alpha Dash Only</label>
+                        <input id="alphadash" name="alphadash" type="text" class="form-control" data-restrict-js="alphadash">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numericplus">Allow Numeric And + (plus) symbol</label>
+                        <input id="numericplus" name="numericplus" type="text" class="form-control" data-restrict-js="numeric|+">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numericplushypen">Allow Numeric And + (plus) And - (hypen) symbol</label>
+                        <input id="numericplushypen" name="numericplushypen" type="text" class="form-control" data-restrict-js="numeric|+|-">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="aliasalpha">Allow @ And alpha And . (dot) AND - (hypen) AND _ (underscore)</label>
+                        <input id="aliasalpha" name="aliasalpha" type="text" class="form-control" data-restrict-js="alpha|@|.|_|-">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../dist/restrict-js.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>
